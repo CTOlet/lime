@@ -1,0 +1,27 @@
+{
+  "name": "@hue/lime",
+  "version": "0.1.0",
+  "description": "Backend app boilerplate",
+  "main": "index.js",
+  "repository": "https://github.com/Nemmo/lime",
+  "author": "Alimzhan Abuov",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "husky": "^4.2.5"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
